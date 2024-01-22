@@ -5,7 +5,6 @@
  *
  * @brief Open Closed Principle can be exemplified by a Shape class that was created with only quadrilaterals in mind.
  * What happens when we need to add support for non-quadrilateral shapes?
- * What happens when there is a Wrapper class that makes use of the Shape class?
  */
 
 #include <array>
@@ -13,9 +12,9 @@
 #include <iostream>
 
 /**
- * @brief Shape class craeted with only quadrilaterals in mind.
+ * @brief Shape class created with only quadrilaterals in mind.
  * ! @warning This class is not open for extensions as it is closely coupled with quadrilaterals.
- * ! @warning This class is not closed for modifications as it is not an abstract class or an interface. So, whenever we need to alter its behavior (say draw), we will need to modify it.
+ * ! @warning This class is not closed for modifications as it is not an abstract class or an interface. So, whenever we need to alter its behavior (i.e. draw), we will need to modify it which can in turn break some other part of code that uses it.
  */
 class ShapeQuad
 {
@@ -125,18 +124,16 @@ int main()
     }
     catch (std::exception &e)
     {
-        std::cout << e.what() << std::endl;
+        std::cout <<"Erorr :: " << e.what() << std::endl;
     }
 
-    {
-        Rectangle rec;
-        Square square;
-        Circle circle;
+    Rectangle rec;
+    Square square;
+    Circle circle;
 
-        std::vector<Shape *> shapes = {&rec, &square, &circle};
-        for (auto shape : shapes)
-            shape->draw();
-    }
+    std::vector<Shape *> shapes = {&rec, &square, &circle};
+    for (auto shape : shapes)
+        shape->draw();
 
     return 0;
 }

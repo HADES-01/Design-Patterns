@@ -10,7 +10,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
-#include <boost/lexical_cast.hpp>
+#include <iostream>
 
 /**
  * @brief General Journal class that has only one concern of managing entries.
@@ -27,7 +27,7 @@ public:
     void add_entry(std::string entry)
     {
         entries.push_back(
-            boost::lexical_cast<std::string>(entries.size() + 1) + ": " + entry);
+            std::to_string(entries.size() + 1) + ": " + entry);
     }
 
     /**
@@ -54,7 +54,7 @@ public:
 /**
  * @brief Specialized version of Journal class that also stores the name of the person adding the entry as well as the company name.
  */
-class WorkJournal : Journal
+class WorkJournal : public Journal
 {
     std::string companyName;
 
@@ -64,7 +64,7 @@ public:
     void add_entry(std::string entry, std::string author)
     {
         entries.push_back(
-            boost::lexical_cast<std::string>(entries.size() + 1) + ": " + entry + " - " + author);
+            std::to_string(entries.size() + 1) + ": " + entry + " - " + author);
     }
 
     /**
@@ -135,6 +135,6 @@ int main()
 
     notes.save_journal("work_notes.txt");
     PersistenceManager::save_journal(notes, "work_notes.txt");
-
+    std::cout << "Successfully Written to Files.";
     return 0;
 }
