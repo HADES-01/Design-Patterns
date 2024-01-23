@@ -26,3 +26,8 @@ Design patterns are recurring solutions to common design problems in software de
         2. Ususally focuses on creating algorithms and establishing communication mechanism between different objects. 
         3. Command, Iterator, Mediator, Observer, Visitor, etc are examples of *Behavioral Patterns*.
 3. [Builder Pattern](Builder/Builder.cpp)
+   - Builder Pattern is a type of Piecewise Creational Patterns.
+   - Builder Pattern can have fluent builders that allow users to chain the build commands together like `builder.do_this().do_that()`.
+   
+   
+
