@@ -1,7 +1,9 @@
 /**
- * @brief Groovy-Style Builder allows user to create objects of a Domain-Specific Language interpretation in the form of nested object intitialization. It uses the c++ feature of uniform initiailization to achieve this.
+ * @cite Groovy-Style Builder allows user to create objects of a Domain-Specific Language interpretation in the form of nested object intitialization. It uses the c++ feature of uniform initiailization to achieve this.
  * Known as Groovy-Style builder because the creation of DSL was groovy only thing before.
  * Intialization looks like `A{ B{ }, C{ D{ "Hello" } } }`
+ * 
+ * @brief Groovy Style Builders can be exemplified by creating a DSL for HTML.
  */
 
 #include <string>
