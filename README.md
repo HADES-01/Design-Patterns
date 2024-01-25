@@ -34,6 +34,5 @@ Design patterns are recurring solutions to common design problems in software de
 4. **[Factory Pattern](Factory/Factory.cpp)**
    - Factory Pattern is a type of Wholesale Creational Pattern where the entire building process is handed over to a factory method or a factory class to avoid any convoluted API for object creation.
    - *Factory Method*, *Factory Class* and *Abstract Factory Class* are all type of Factory Pattern.
-   - *Abstract Factory Classes* are used to create heirarchy of factories that create different object in the heirarchy.
-   
+   - *[Abstract Factory Classes](Factory/AbstractFactory/AbstractFactory.cpp)* are used to create heirarchy of factories that create different object in the heirarchy.
 
