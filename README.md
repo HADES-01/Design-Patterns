@@ -30,6 +30,10 @@ Design patterns are recurring solutions to common design problems in software de
    - Fluent Builders allow users to chain the build commands together like `builder.do_this().do_that()`.
    - [Groovy-Style Builders](Builder/Groovy/GroovyBuilder.cpp) allow users to create *Domain-Specific Languages* that makes use of *uniform initialization* e.g. The nested groovy-style initialization looks `A{ B{ }, C{ D{ } } }`.
    - [Builder-Facets](Builder/BuilderFacets/BuilderFacets.cpp) is a combination of Builder and Facade Pattern and is used when the object being built is highly complex and requires the use of multiple builders.
-   
+  
+4. **[Factory Pattern](Factory/Factory.cpp)**
+   - Factory Pattern is a type of Wholesale Creational Pattern where the entire building process is handed over to a factory method or a factory class to avoid any convoluted API for object creation.
+   - *Factory Method*, *Factory Class* and *Abstract Factory Class* are all type of Factory Pattern.
+   - *Abstract Factory Classes* are used to create heirarchy of factories that create different object in the heirarchy.
    
 
