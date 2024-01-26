@@ -34,7 +34,7 @@ public:
             throw std::runtime_error("Extension ." + ext + " not recognized .. ");
         }
         auto file = file_factories[ext]->make(filename);
-        return file
+        return file;
     }
 };
 

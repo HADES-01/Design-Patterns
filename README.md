@@ -35,4 +35,8 @@ Design patterns are recurring solutions to common design problems in software de
    - Factory Pattern is a type of Wholesale Creational Pattern where the entire building process is handed over to a factory method or a factory class to avoid any convoluted API for object creation.
    - *Factory Method*, *Factory Class* and *Abstract Factory Class* are all type of Factory Pattern.
    - *[Abstract Factory Classes](Factory/AbstractFactory/AbstractFactory.cpp)* are used to create heirarchy of factories that create different object in the heirarchy.
+5. **[Prototype Pattern](Prototype/Prototype.cpp)**
+   - Prototype Pattern is a type of Creational Pattern where the new object is built by making modifications on an already existing complex object, or a prototype, by creating its **deep copy**, or **cloning** it. 
+   - Prototyping can also be done via serialization as serialization traverses the entire object graph and needs serlialization implementation for each of the object present in it and the object that was serialized when deserialized creates a deep copy of the same.
+
 
