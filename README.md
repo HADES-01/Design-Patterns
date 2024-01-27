@@ -38,5 +38,10 @@ Design patterns are recurring solutions to common design problems in software de
 5. **[Prototype Pattern](Prototype/Prototype.cpp)**
    - Prototype Pattern is a type of Creational Pattern where the new object is built by making modifications on an already existing complex object, or a prototype, by creating its **deep copy**, or **cloning** it. 
    - Prototyping can also be done via serialization as serialization traverses the entire object graph and needs serlialization implementation for each of the object present in it and the object that was serialized when deserialized creates a deep copy of the same.
-
+6. **[Singleton Pattern](Singleton/Singleton.cpp)**
+   - Singleton Pattern is a form of Creational Pattern where an object is or should be instatntiated only once.
+   - Singleton pattern e.g. is used when the constructor call is expensive and we need to provide the same instance to everyone. 
+   - It also allows lazy instantiation and thread safety.
+   - *Monostate Pattern* is a variation of Singleton Pattern where all the data members of the class are static and getters and setter are called for them. This pattern is highly prone to bugs and not very inheritance-friendly due to the static members.
+   - *[Multiton Pattern](Singleton/Multiton/Multiton.cpp)* is also a variation of Singleton Pattern where multiple singleton objects are created based on a given range or keys.
 
