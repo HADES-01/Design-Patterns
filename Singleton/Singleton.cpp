@@ -1,6 +1,7 @@
 /**
  * @cite Singleton Pattern states that when constructing an object is expensive then that class should only have a single instance available which should then be used throughout the program.
- *
+ * Aims at controlling the access to resources and avoid their overuse.
+ * 
  * @brief Singleton Pattern can be exemplified by a Database Class that loads up the database only once and provides an API to interact with it.
  * What happens when we need data from the database to actually test the Singleton Database Class?
  */

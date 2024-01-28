@@ -44,4 +44,6 @@ Design patterns are recurring solutions to common design problems in software de
    - It also allows lazy instantiation and thread safety.
    - *Monostate Pattern* is a variation of Singleton Pattern where all the data members of the class are static and getters and setter are called for them. This pattern is highly prone to bugs and not very inheritance-friendly due to the static members.
    - *[Multiton Pattern](Singleton/Multiton/Multiton.cpp)* is also a variation of Singleton Pattern where multiple singleton objects are created based on a given range or keys.
-
+7. **[Adapter Pattern](Adapter/Adapter.cpp)**
+   - Adapter Pattern is a form of Structural Pattern where a given interface is '*adapted*' or transformed to conform to the required interface.
+   - Used when the given interface doesn't have the required functionality out of the box or if it doesn't conform to the required structural specs e.g. exposes some internal data that should be private in your program's context or if the given interface might change in the future.
