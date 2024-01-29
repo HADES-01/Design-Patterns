@@ -47,3 +47,7 @@ Design patterns are recurring solutions to common design problems in software de
 7. **[Adapter Pattern](Adapter/Adapter.cpp)**
    - Adapter Pattern is a form of Structural Pattern where a given interface is '*adapted*' or transformed to conform to the required interface.
    - Used when the given interface doesn't have the required functionality out of the box or if it doesn't conform to the required structural specs e.g. exposes some internal data that should be private in your program's context or if the given interface might change in the future.
+8. **[Bridge Pattern](Bridge/Bridge.cpp)**
+   - Bridge Pattern is a type of Structural Pattern where an interface(heirarchy) is decoupled from its implementation(heirarchy) so that the two can vay independently.
+   - It is useful when there are two orthogonal dependencies that need to evolve independently, allowing changes in one heirarchy to not affect the other and to also avoid '[Cartesian Entity Explosion](EXTRAS.md#cartesian-entity-explosion)'.
+   - *[Pimpl Idiom Pattern](EXTRAS.md#pimpl-idiom-pattern)* is also a variation of Bridge Pattern.
