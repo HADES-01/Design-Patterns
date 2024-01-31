@@ -51,5 +51,8 @@ Design patterns are recurring solutions to common design problems in software de
    - Bridge Pattern is a type of Structural Pattern where an interface(heirarchy) is decoupled from its implementation(heirarchy) so that the two can vay independently.
    - It is useful when there are two orthogonal dependencies that need to evolve independently, allowing changes in one heirarchy to not affect the other and to also avoid '[Cartesian Entity Explosion](EXTRAS.md#cartesian-entity-explosion)'.
    - *[Pimpl Idiom Pattern](EXTRAS.md#pimpl-idiom-pattern)* is also a variation of Bridge Pattern.
-  9. **[Composite Pattern](Composite/Composite.cpp)**
+9. **[Composite Pattern](Composite/Composite.cpp)**
    - Composite Pattern is a variation of Structural Pattern that allows user to interact with both scalar or composite objects uniformly i.e. through the same API.
+10. **[Decorator Pattern](DEcorator/Decorator.cpp)**
+   - Decorator Pattern is another variation of Structural Pattern which facilitates the addition of behaviours to individual objects.
+   - Decorator Pattern can be implemented in C++ by Aggregating the existing object or by inherting from the decorated object.
