@@ -30,7 +30,6 @@ Design patterns are recurring solutions to common design problems in software de
    - Fluent Builders allow users to chain the build commands together like `builder.do_this().do_that()`.
    - [Groovy-Style Builders](Builder/Groovy/GroovyBuilder.cpp) allow users to create *Domain-Specific Languages* that makes use of *uniform initialization* e.g. The nested groovy-style initialization looks `A{ B{ }, C{ D{ } } }`.
    - [Builder-Facets](Builder/BuilderFacets/BuilderFacets.cpp) is a combination of Builder and Facade Pattern and is used when the object being built is highly complex and requires the use of multiple builders.
-  
 4. **[Factory Pattern](Factory/Factory.cpp)**
    - Factory Pattern is a type of Wholesale Creational Pattern where the entire building process is handed over to a factory method or a factory class to avoid any convoluted API for object creation.
    - *Factory Method*, *Factory Class* and *Abstract Factory Class* are all type of Factory Pattern.
@@ -51,8 +50,11 @@ Design patterns are recurring solutions to common design problems in software de
    - Bridge Pattern is a type of Structural Pattern where an interface(heirarchy) is decoupled from its implementation(heirarchy) so that the two can vay independently.
    - It is useful when there are two orthogonal dependencies that need to evolve independently, allowing changes in one heirarchy to not affect the other and to also avoid '[Cartesian Entity Explosion](EXTRAS.md#cartesian-entity-explosion)'.
    - *[Pimpl Idiom Pattern](EXTRAS.md#pimpl-idiom-pattern)* is also a variation of Bridge Pattern.
-9. **[Composite Pattern](Composite/Composite.cpp)**
+9. **[Composite Pattern*](Composite/Composite.cpp)**
    - Composite Pattern is a variation of Structural Pattern that allows user to interact with both scalar or composite objects uniformly i.e. through the same API.
-10. **[Decorator Pattern](DEcorator/Decorator.cpp)**
-   - Decorator Pattern is another variation of Structural Pattern which facilitates the addition of behaviours to individual objects.
-   - Decorator Pattern can be implemented in C++ by Aggregating the existing object or by inherting from the decorated object.
+10. **[Decorator Pattern*](DEcorator/Decorator.cpp)**
+    - Decorator Pattern is another variation of Structural Pattern which facilitates the addition of behaviours to individual objects.
+    - Decorator Pattern can be implemented in C++ by Aggregating the existing object or by inherting from the decorated object.
+11. **[Facade Pattern](Facade/Facade.cpp)**
+    - Facade Pattern is a type of Strucutural Pattern where an easy-to-use or a simpler API is build on top of a rather complex collection of sub-sytems, trying to provide a unified interface over the interfaces of the multiple sub-sytems.
+    - Facade Pattern can be seen in the [*BuilderFacets*](Builder/BuilderFacets/BuilderFacets.cpp) example where the a simpler API of `PersonBuilder` is provide to initialize the collection of multiple complex attributes.
