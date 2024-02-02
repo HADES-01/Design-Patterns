@@ -52,9 +52,12 @@ Design patterns are recurring solutions to common design problems in software de
    - *[Pimpl Idiom Pattern](EXTRAS.md#pimpl-idiom-pattern)* is also a variation of Bridge Pattern.
 9. **[Composite Pattern*](Composite/Composite.cpp)**
    - Composite Pattern is a variation of Structural Pattern that allows user to interact with both scalar or composite objects uniformly i.e. through the same API.
-10. **[Decorator Pattern*](DEcorator/Decorator.cpp)**
+10. **[Decorator Pattern*](Decorator/Decorator.cpp)**
     - Decorator Pattern is another variation of Structural Pattern which facilitates the addition of behaviours to individual objects.
     - Decorator Pattern can be implemented in C++ by Aggregating the existing object or by inherting from the decorated object.
 11. **[Facade Pattern](Facade/Facade.cpp)**
     - Facade Pattern is a type of Strucutural Pattern where an easy-to-use or a simpler API is build on top of a rather complex collection of sub-sytems, trying to provide a unified interface over the interfaces of the multiple sub-sytems.
     - Facade Pattern can be seen in the [*BuilderFacets*](Builder/BuilderFacets/BuilderFacets.cpp) example where the a simpler API of `PersonBuilder` is provide to initialize the collection of multiple complex attributes.
+12. [Flyweight Pattern](Flyweight/Flyweight.cpp)
+    - Flyweight Pattern is a form of Structural Pattern which helps in reducing memory usage by sharing the objects with similar states across multiple contexts. 
+    - It is useful when a large number of objects with same states have to be created and each object is either very large or creating the object adds significant overhead.
