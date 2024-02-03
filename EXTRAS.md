@@ -38,3 +38,7 @@ void Person::a() {
 - In this method the V_TABLE and V_PTR are not created thus not inflating the class size and the type of the object is determined by casting the base class pointer to the typename and then calling the required method. This makes sure that the method called actually belongs to the typename.
 - CRTP is also faster then the virtual approach as it circumvents the need of creating V_TABLE and V_PTR altogether.
 - [Example](C++Concepts/CRTP.cpp) represents the above usecase.
+
+### Smart Pointers (unique, shared and weak)
+- Smart Pointers are a proxy created over the raw pointers present in the C++ that makes the use of the pointers thread-safe and provides additional functionality.
+- 

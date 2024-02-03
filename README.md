@@ -1,5 +1,6 @@
 # Design Patterns
 Design patterns are recurring solutions to common design problems in software development. They provide a template for solving specific issues in a flexible and reusable way. By encapsulating best practices, design patterns promote maintainability, scalability, and clarity in software design.
+*[C++ Concepts](EXTRAS.md) are required before understanding the design patterns.*
 
 1. **[SOLID](SOLID/)**
     - [Single Responsibility](SOLID/SingleResponsibility/SingleResponsibility.cpp)
@@ -58,6 +59,10 @@ Design patterns are recurring solutions to common design problems in software de
 11. **[Facade Pattern](Facade/Facade.cpp)**
     - Facade Pattern is a type of Strucutural Pattern where an easy-to-use or a simpler API is build on top of a rather complex collection of sub-sytems, trying to provide a unified interface over the interfaces of the multiple sub-sytems.
     - Facade Pattern can be seen in the [*BuilderFacets*](Builder/BuilderFacets/BuilderFacets.cpp) example where the a simpler API of `PersonBuilder` is provide to initialize the collection of multiple complex attributes.
-12. [Flyweight Pattern](Flyweight/Flyweight.cpp)
+12. **[Flyweight Pattern](Flyweight/Flyweight.cpp)**
     - Flyweight Pattern is a form of Structural Pattern which helps in reducing memory usage by sharing the objects with similar states across multiple contexts. 
     - It is useful when a large number of objects with same states have to be created and each object is either very large or creating the object adds significant overhead.
+13. **[Proxy Pattern](Proxy/Proxy.cpp)**
+    - Proxy Pattern is another type of Structural Pattern which is used to create an interface for a resource in order to control access to it as the resource might be expensive, difiicult to construct or requires added functionality.
+    - Key difference between Proxy and Decorator Pattern is that a Proxy provides an identical interface by replicating the members, adds the required functionalities to the redefined members, whereas a Decorator provides an enhanced interface to the underlying resource by aggregating the resource.
+    - Simplest Examples of Proxy Pattern are the [smart_pointers](EXTRAS.md#smart-pointers-unique-shared-and-weak) of STL library.
