@@ -1,5 +1,5 @@
 /**
- *  @cite Facade Patttern states that in order to keep the end-user API simple and easy-to-use, an interface should be built over the all the complex sub-systems.
+ *  @cite Facade Patttern states that in order to keep the end-user API simple and easy-to-use, an unified interface should be built over the all the complex sub-systems.
  * Aims at increasing Code Readabilty by simplifying the API.
  *
  * @brief Facade Pattern can exemplified by a Television Class that has a multitude of sub-systems (VideoDecoder, AudioDecoder, etc.) but provides a simple API of 'play_movie()' to play a movie.

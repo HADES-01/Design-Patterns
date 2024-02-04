@@ -1,5 +1,5 @@
 /**
- * @cite Proxy Pattern states that when a resource is expensive, hard to construct or require logging etc. then an interface is created over the resource in order to control acces to it.
+ * @cite Proxy Pattern states that when a resource is expensive, hard to construct or require logging etc. then an interface is created over the resource in order to control access to it, which posses the same API as the resource itself.
  * Aims at granular control of the resources as the resources are closely monitored through the proxy class.
  *
  * @brief Proxy Pattern can be exemplified by CloudServices class that runs all the cloud services which are expensive.

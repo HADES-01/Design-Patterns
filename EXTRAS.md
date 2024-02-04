@@ -37,8 +37,18 @@ void Person::a() {
 - It is a method of performing runtime polymorphism without the use of virtual functions. It is done by using Template classes and figuring out at runtime the type of the class that has called the method.
 - In this method the V_TABLE and V_PTR are not created thus not inflating the class size and the type of the object is determined by casting the base class pointer to the typename and then calling the required method. This makes sure that the method called actually belongs to the typename.
 - CRTP is also faster then the virtual approach as it circumvents the need of creating V_TABLE and V_PTR altogether.
-- [Example](C++Concepts/CRTP.cpp) represents the above usecase.
+- [Example](C++Concepts/CRTP/CRTP.cpp) represents the above usecase.
 
 ### Smart Pointers (unique, shared and weak)
-- Smart Pointers are a proxy created over the raw pointers present in the C++ that makes the use of the pointers thread-safe and provides additional functionality.
-- 
+- Smart Pointers are a proxy created over the raw pointers present in the C++ that allows for automatic Garbage Collection, Resource Ownership and prevention of Memory Leaks.
+- Smart Pointers are stack allocated objects that act as pointers to heap-allocated objects, and as the Smart Pointer goes out of scope it also releases the heap-memory allowing Automatic Garbage Collection and prevention of Memory Leaks.
+- `std::unique_ptr`
+  1. It implements Singular Resource Ownership semantics in C++.
+  2. It makes sure that only one instance of `std::unique_ptr` owns the resource object at a given moment i.e Exclusive Ownership.
+- `std::shared_ptr`
+  1. It implements Shared Resource Ownership semantics in C++.
+  2. Allows multiple `std::shared_ptr` to be the owners of the same object(done by reference counting) and releases the object when the last owner goes out of scope or is reset.
+- `std::weak_ptr`
+  1. It implements Non-Owning References in C++.
+  2. A `std::weak_ptr` allows access to the object managed by shared_ptr that doesn't participate in the refrence counting nor does it extends the lifetime of the object.
+- [Example](C++Concepts/SmartPointers/SmartPointers.cpp) illustrates all 3 variations.

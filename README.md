@@ -66,3 +66,6 @@ Design patterns are recurring solutions to common design problems in software de
     - Proxy Pattern is another type of Structural Pattern which is used to create an interface for a resource in order to control access to it as the resource might be expensive, difiicult to construct or requires added functionality.
     - Key difference between Proxy and Decorator Pattern is that a Proxy provides an identical interface by replicating the members, adds the required functionalities to the redefined members, whereas a Decorator provides an enhanced interface to the underlying resource by aggregating the resource.
     - Simplest Examples of Proxy Pattern are the [smart_pointers](EXTRAS.md#smart-pointers-unique-shared-and-weak) of STL library.
+14. **[Chain Of Responsibility](CoR/CoR.cpp)**
+    - Chain of Responsibility is a Behavioral Pattern which allows a object to pass the request along a chain of potential handlers until one of them handles the request.
+    - It decouples the sender of an object fromm its reciever by giving more than one object the chance to handle the request.
