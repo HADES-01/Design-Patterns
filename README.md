@@ -1,6 +1,5 @@
 # Design Patterns
 Design patterns are recurring solutions to common design problems in software development. They provide a template for solving specific issues in a flexible and reusable way. By encapsulating best practices, design patterns promote maintainability, scalability, and clarity in software design.
-*[C++ Concepts](EXTRAS.md) are required before understanding the design patterns.*
 
 1. **[SOLID](SOLID/)**
     - [Single Responsibility](SOLID/SingleResponsibility/SingleResponsibility.cpp)
@@ -65,7 +64,11 @@ Design patterns are recurring solutions to common design problems in software de
 13. **[Proxy Pattern](Proxy/Proxy.cpp)**
     - Proxy Pattern is another type of Structural Pattern which is used to create an interface for a resource in order to control access to it as the resource might be expensive, difiicult to construct or requires added functionality.
     - Key difference between Proxy and Decorator Pattern is that a Proxy provides an identical interface by replicating the members, adds the required functionalities to the redefined members, whereas a Decorator provides an enhanced interface to the underlying resource by aggregating the resource.
-    - Simplest Examples of Proxy Pattern are the [smart_pointers](EXTRAS.md#smart-pointers-unique-shared-and-weak) of STL library.
+    - Simplest Examples of Proxy Pattern are the *[smart_pointers](EXTRAS.md#smart-pointers-unique-shared-and-weak)* of STL library.
 14. **[Chain Of Responsibility](CoR/CoR.cpp)**
     - Chain of Responsibility is a Behavioral Pattern which allows a object to pass the request along a chain of potential handlers until one of them handles the request.
     - It decouples the sender of an object fromm its reciever by giving more than one object the chance to handle the request.
+15. **[Command Pattern](Command/Command.cpp])**
+    - Command Pattern is a Behavioral Pattern in which each operation/command performed is stored as an object that contains all the information required to perform the operation/command.
+    - It provides useful functionality like undoable commands, command queues, macro commands etc.
+    - *[Commad Query Separation](EXTRAS.md#command-query-separation)* is variation of Command Pattern.

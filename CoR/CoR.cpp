@@ -1,5 +1,6 @@
 /**
  * @cite Chain of Responsibility states that a request should be handled by a series of handlers, each of which can either process the request or pass it along the chain of handlers.
+ * Aims at increasing modularity as the request handling is decoupled or separated from the reciever and the sender.    
  *
  * @brief Chain Of Responsibility can be exemplified by a Linked List of PurchaseHandlers that handles the purchase requests based on their level of authority to approve a purchase request.
  */

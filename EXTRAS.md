@@ -52,3 +52,10 @@ void Person::a() {
   1. It implements Non-Owning References in C++.
   2. A `std::weak_ptr` allows access to the object managed by shared_ptr that doesn't participate in the refrence counting nor does it extends the lifetime of the object.
 - [Example](C++Concepts/SmartPointers/SmartPointers.cpp) illustrates all 3 variations.
+
+### Command Query Separation
+- Variation of Command Pattern where the Command/Operation object is divided into 2 different entites namely, Command and Queries.
+- **Command** - refers to the commands/operations that requests changes in the system.
+- **Query** - refers to the commands/operations that requests information about the state of the system.
+- Adds another layer of abstraction over the Command Pattern API in order differntiate between Commands & Queries and possibly handle them diffrerently as well.
+- Used in databases in order to separately handle the read/Query operations and write/Command operations to improve latency and throughput.
