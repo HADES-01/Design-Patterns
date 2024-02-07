@@ -72,3 +72,8 @@ Design patterns are recurring solutions to common design problems in software de
     - Command Pattern is a Behavioral Pattern in which each operation/command performed is stored as an object that contains all the information required to perform the operation/command.
     - It provides useful functionality like undoable commands, command queues, macro commands etc.
     - *[Commad Query Separation](EXTRAS.md#command-query-separation)* is variation of Command Pattern.
+16. **[Interpreter Pattern](Interpreter/Interpreter.cpp)**
+    - Interpreter Pattern is a type of Behavioral Pattern that is used to process structured textual data by the process of lexing and and parsing.
+    - *Lexing* is the process of separating the text into lexical tokens (tokens that have some meaning like 'class' keyword in C++).
+    - *Parsing* is the process of turning the tokens into machine understandable statements.
+    - Modern Language compiler use the interpreter to parse the code.
