@@ -10,8 +10,13 @@
 #include <string>
 #include <vector>
 
+/**
+ * @brief Keeps track of individual token in the text.
+ * 
+ */
 struct Token
 {
+    // Denotes all the allowed tokens in the text.
     enum TokenType
     {
         integer,
@@ -20,6 +25,7 @@ struct Token
         lparen,
         rparen
     } type;
+
     std::string token;
 
     Token(TokenType type, std::string token) : type(type), token(token) {}
@@ -30,6 +36,9 @@ struct Token
     }
 };
 
+/**
+ * @brief Travereses the Text and divides it into the required Tokens
+ */
 std::vector<Token> lexer(std::string input)
 {
     std::vector<Token> res;
@@ -80,11 +89,16 @@ std::vector<Token> lexer(std::string input)
     return res;
 }
 
+/**
+ * @brief Abstraction for OOP-based notation for all the tokens.
+ * Provides evaluation funtionality to all the tokens.
+ */
 struct Element
 {
     virtual int eval() = 0;
 };
 
+// Stores the integers present in the text as a object.
 struct Integer : Element
 {
     int value{0};
@@ -97,6 +111,9 @@ struct Integer : Element
     }
 };
 
+/**
+ * @brief Stores all the binary operator present in the text as an object.
+ */
 struct BinaryOperation : Element
 {
     Element *lhs, *rhs;
@@ -122,6 +139,10 @@ struct BinaryOperation : Element
     }
 };
 
+/**
+ * @brief Parses all the tokens into their OOP-counterparts that can be evaulated.
+ * !@warning Cannot parse Nested Parenthesis and unary operations e.g. negative numbers.
+ */
 Element *parse(std::vector<Token> &tokens)
 {
     auto res = new BinaryOperation();
@@ -184,9 +205,10 @@ Element *parse(std::vector<Token> &tokens)
     return res;
 }
 
+
 int main()
 {
-    std::string input("(13-(10-4))-(12-8)");
+    std::string input("(13-10)-(12-8)");
     auto tokens = lexer(input);
 
     for (auto token : tokens)

@@ -77,3 +77,7 @@ Design patterns are recurring solutions to common design problems in software de
     - *Lexing* is the process of separating the text into lexical tokens (tokens that have some meaning like 'class' keyword in C++).
     - *Parsing* is the process of turning the tokens into machine understandable statements.
     - Modern Language compiler use the interpreter to parse the code.
+17. **[Interator Pattern](Iterator/Iterator.cpp)**
+    - Iterator Pattern is a variation of Behavioral Pattern that provides an API to traverse a data structure.
+    - An iterator object keeps a reference to the current element and knows how to move to the next element.
+    - All the data structures in C++ STL have iterators that allows their traversal.
