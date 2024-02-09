@@ -81,3 +81,7 @@ Design patterns are recurring solutions to common design problems in software de
     - Iterator Pattern is a variation of Behavioral Pattern that provides an API to traverse a data structure.
     - An iterator object keeps a reference to the current element and knows how to move to the next element.
     - All the data structures in C++ STL have iterators that allows their traversal.
+18. **[Mediator Pattern](Mediator/Mediator.cpp)**
+    - Mediator Pattern is type of Behavioral Pattern that facilitates communication between components through a central component (mediator), rather than all components directly communicating with each other.
+    - Mediator keeps track of all the components whenever they come in and out of the system, which is much safer than individual components accessing a direct reference of some other component that may have gone out of the system.
+    - Main server of a chat Application is an example of mediator pattern.
