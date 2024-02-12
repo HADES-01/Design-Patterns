@@ -85,3 +85,6 @@ Design patterns are recurring solutions to common design problems in software de
     - Mediator Pattern is type of Behavioral Pattern that facilitates communication between components through a central component (mediator), rather than all components directly communicating with each other.
     - Mediator keeps track of all the components whenever they come in and out of the system, which is much safer than individual components accessing a direct reference of some other component that may have gone out of the system.
     - Main server of a chat Application is an example of mediator pattern.
+19. **[Memento Pattern](Memento/Memento.cpp)**
+    - Memento Pattern is a Behavioral Pattern that provides the capture and restore functionality to a system by storing the state of system in an immutable format.
+    - Memento Pattern is different from Command Pattern in the sense that Command Pattern stores the commands as objects in the system and inorder to restore the system the commands have to be provided with undo functionality, whereas in Memento Pattern the state of the system is stored as an object which can be restored by just replacing the current state with the required state object.
