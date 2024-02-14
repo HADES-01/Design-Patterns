@@ -1,5 +1,6 @@
 /**
  * @cite Memento Pattern states that inorder to capture and restore system state, the state of the system should be stored as an object(memento), which can then be replaced with the current state.
+ * Aims at making operations reversible and allowing the rollback functionalities.
  *
  * @brief Memento Pattern can be exemplified by a Text Editor where you can undo and redo the changes done to the text.
  */

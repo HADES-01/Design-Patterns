@@ -88,3 +88,6 @@ Design patterns are recurring solutions to common design problems in software de
 19. **[Memento Pattern](Memento/Memento.cpp)**
     - Memento Pattern is a Behavioral Pattern that provides the capture and restore functionality to a system by storing the state of system in an immutable format.
     - Memento Pattern is different from Command Pattern in the sense that Command Pattern stores the commands as objects in the system and inorder to restore the system the commands have to be provided with undo functionality, whereas in Memento Pattern the state of the system is stored as an object which can be restored by just replacing the current state with the required state object.
+20. **[Observer Patter](Observer/Observer.cpp)**
+    - Observer Pattern is a another variation of Behavioral Pattern which facilitates the communication between different components by notifying the components about any state changes, without needing any implementation details of the notified componenet.
+    - Observer is the components that needs to be notified and the Observable is the componenet that notifies the observers.   
