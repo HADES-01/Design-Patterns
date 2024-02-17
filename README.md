@@ -91,3 +91,6 @@ Design patterns are recurring solutions to common design problems in software de
 20. **[Observer Patter](Observer/Observer.cpp)**
     - Observer Pattern is a another variation of Behavioral Pattern which facilitates the communication between different components by notifying the components about any state changes, without needing any implementation details of the notified componenet.
     - Observer is the components that needs to be notified and the Observable is the componenet that notifies the observers.   
+21. **[State Pattern](State/State.cpp)**
+    - State Pattern is a type of Behavioral Pattern that facillitates the transitioning of an object from one state to another based on either changes in internal state or triggered by an external event (Observer Pattern).
+    - 
