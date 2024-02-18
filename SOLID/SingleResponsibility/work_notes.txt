@@ -1,0 +1,3 @@
+Work Notes - ABC inc.
+1: Perform Sanity Checks on Database. - George
+2: Tell Joe to learn Design Pattern. - Helen

@@ -93,4 +93,8 @@ Design patterns are recurring solutions to common design problems in software de
     - Observer is the components that needs to be notified and the Observable is the componenet that notifies the observers.   
 21. **[State Pattern](State/State.cpp)**
     - State Pattern is a type of Behavioral Pattern that facillitates the transitioning of an object from one state to another based on either changes in internal state or triggered by an external event (Observer Pattern).
-    - 
+    - State Machine is a system that defines the transitions that an object goes through during its lifetime.
+22. [Strategy Pattern](Strategy/Strategy.cpp)
+    - Strategy Pattern is a variation of Behavioral Pattern where the behavior of a system is determined partially at either runtime or compile-time.
+    - Strategy Pattern is also known as Policy Pattern.
+    - Strategy Pattern is similar to Abstract Factory Pattern in the sense that both decouples client code from implementation details, however Abstract Factory Pattern is used to instantiate family of related objects whereas Strategy Pattern is used to alternate between different strategies dynamically.

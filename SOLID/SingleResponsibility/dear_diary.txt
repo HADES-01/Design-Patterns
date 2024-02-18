@@ -1,0 +1,3 @@
+Dear Diary
+1: I started learning Design Patterns.
+2: Single Responsibilty principle seems gay.
