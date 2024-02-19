@@ -98,3 +98,5 @@ Design patterns are recurring solutions to common design problems in software de
     - Strategy Pattern is a variation of Behavioral Pattern where the behavior of a system is determined partially at either runtime or compile-time.
     - Strategy Pattern is also known as Policy Pattern.
     - Strategy Pattern is similar to Abstract Factory Pattern in the sense that both decouples client code from implementation details, however Abstract Factory Pattern is used to instantiate family of related objects whereas Strategy Pattern is used to alternate between different strategies dynamically.
+23. **[Template Pattern](Template/Template.cpp)**
+    - Template Pattern is type of Behavioral Pattern that defines the skeleton for an algorithm through an interface, details of which are then determined by the inheritors.
