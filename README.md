@@ -100,3 +100,5 @@ Design patterns are recurring solutions to common design problems in software de
     - Strategy Pattern is similar to Abstract Factory Pattern in the sense that both decouples client code from implementation details, however Abstract Factory Pattern is used to instantiate family of related objects whereas Strategy Pattern is used to alternate between different strategies dynamically.
 23. **[Template Pattern](Template/Template.cpp)**
     - Template Pattern is type of Behavioral Pattern that defines the skeleton for an algorithm through an interface, details of which are then determined by the inheritors.
+24. **[Visitor Pattern](Visitor/Visitor.cpp)**
+    - Visitor Pattern is a form of Behavioral Pattern that allows the addition of new operations or functionalities to existing heirarchy of components without breaking either the Open Closed Principle or the Single Responsibility Principle.
